@@ -1,20 +1,22 @@
 import './App.css';
 import { HashRouter, Routes, Route } from "react-router-dom";
 import Header from './components/Header/header'
+import Footer from './components/Footer/footer';
 import Landing_page from './Landing_page/landing_page';
 function App() {
 
-  
+
   return (
     <HashRouter>
       <Header />
       <Routes>
-        <Route path='/' element={<Landing_page/>} />
+        <Route path='/' element={<Landing_page />} />
         {/* <Route />
         <Route />
         <Route />
         <Route /> */}
       </Routes>
+      < Footer />
     </HashRouter>
   );
 }

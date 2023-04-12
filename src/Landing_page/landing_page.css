@@ -56,11 +56,20 @@
 }
 
 .landing_page_nx1c_cta_button {
-    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 14px 48px;
+    gap: 10px;
+    width: 172px;
+    height: 50px;
+    background: #363F72;
     border-color: transparent;
-    background-color: #363F72;
-    color: #ffff;
-    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 22px;
+    color: #FFFFFF;
     cursor: pointer;
 }
 
@@ -195,4 +204,118 @@
     padding: 0px;
     gap: 16px;
     cursor: pointer;
+}
+
+.benefits {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.benefits_wrap {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #DCDFEA;
+    padding: 70px 0px;
+}
+
+.benefits_left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 0px;
+    gap: 15px;
+    width: 265px;
+    height: 377px;
+}
+
+.benefits_left span {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 29px;
+    color: #101828;
+}
+
+.benefits_cta{
+    display: flex;
+    align-items: center;
+    padding: 0px;
+    gap: 16px;
+    width: 107px;
+    height: 22px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 22px;
+    color: #101828;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.benefits_left p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    color: #667085;
+}
+
+
+.benefits_right {
+    width: 55%;
+    /* background-color: grey; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.benefits_right_card {
+    /* width: 47%; */
+    width: 267px;
+    height: 310px;
+    background-image: url('./images//Topographic.png');
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #FEF8F6;
+}
+
+
+.benefits_right_card span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background: #FEF8F6;
+    border: 1.3px solid #667085;
+    border-radius: 40px;
+}
+
+
+.benefits_right_card h4 {
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 27px;
+    text-align: center;
+    color: #101828;
+}
+
+.benefits_right_card p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    text-align: center;
+    color: #667085;
+    width: 67.1%;
 }

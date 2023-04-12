@@ -3,7 +3,7 @@ import { BsArrowDown } from "react-icons/bs";
 import { BsArrowRight } from "react-icons/bs";
 import Component1 from "../components/component1/component1";
 import Component2 from "../components/component2/component2";
-
+import Component3 from "../components/component3/component3";
 
 const landing_page = () => {
 
@@ -77,6 +77,51 @@ const landing_page = () => {
             </div>
             <Component1 />
             <Component2 />
+
+            <div className="benefits">
+                <div className="benefits_wrap">
+                    <div className="benefits_left">
+                        <span>Are You Passionate About Empowering African Businesses And Bringing Global Business To The Continent?</span>
+                        <p>Work With The Fastest-Growing African Fintech Company</p>
+                        <div className="benefits_cta">
+                            <p>Contact Us</p>
+                            <BsArrowRight />
+                        </div>
+
+                    </div>
+                    <div className="benefits_right">
+                        <div className="benefits_right_card">
+                            <span>
+                                f
+                            </span>
+                            <h4>Fast Settlement Times</h4>
+                            <p>Rapid settlement within 48 hours.</p>
+                        </div>
+                        <div className="benefits_right_card">
+                            <span>
+                                f
+                            </span>
+                            <h4>Custom, Competitive Rates</h4>
+                            <p>Transparent and volume-based pricing.</p>
+                        </div>
+                        <div className="benefits_right_card">
+                            <span>
+                                f
+                            </span>
+                            <h4>Wholesale Provider</h4>
+                            <p>50+ currency pairs including intra-African and digital currencies</p>
+                        </div>
+                        <div className="benefits_right_card">
+                            <span>
+                                f
+                            </span>
+                            <h4>VIP Customer Support</h4>
+                            <p>24/7 customer service reachable via WhatsApp, email, and phone</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            < Component3 />
         </div>
     )
 }
