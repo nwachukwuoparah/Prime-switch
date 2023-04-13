@@ -55,6 +55,16 @@
     width: 464px;
 }
 
+.component1_cont_text1 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 16px;
+    width: 464px;
+    margin-left: 60px;
+}
+
 .component1_cont_text h2 {
     font-style: normal;
     font-weight: 400;
@@ -63,7 +73,7 @@
     color: #101828;
 }
 
-.component1_cont_text h5{
+.component1_cont_text h5 {
     font-style: normal;
     font-weight: 400;
     font-size: 24px;
@@ -72,8 +82,24 @@
     width: 347px;
 }
 
+.component1_cont_text1 h5 {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 35px;
+    color: #101828;
+    width: 347px;
+}
 
 .component1_cont_text p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    color: #667085;
+}
+
+.component1_cont_text1 p {
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -113,4 +139,42 @@
     line-height: 22px;
     color: #FFFFFF;
     cursor: pointer;
+}
+
+
+@media screen and (width <=834px) {
+    .component1_cont {
+        width: 90%;
+        flex-direction: row-reverse;
+    }
+
+    .component1_cont1 {
+        width: 90%;
+        flex-direction: row;
+    }
+
+    .component1_cont_text {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 16px;
+        width: 464px;
+    }
+
+
+
+    .component1_cont_text1 {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 16px;
+        width: 464px;
+        margin-left: 80px;
+    }
+
+
+
+
 }

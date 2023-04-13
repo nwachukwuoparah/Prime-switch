@@ -1,4 +1,4 @@
-import React,{useEffect} from "react"
+import React, { useEffect } from "react"
 import Image from './Image (1).png'
 import Image1 from './Image.png'
 import Component1 from "../components/component1/component1";
@@ -24,25 +24,27 @@ const Service = (props) => {
         },
         {
             Image: Image1,
-            p: 'Foreign Exchange',
+            p: 'Corporate Treasury',
             h5: 'We help businesses move money easily.',
             cta1: 'Learn More',
-            reverse: true
+            reverse: true,
+            M: true
         },
         {
             Image: Image1,
-            p: 'Payments & Settlement',
+            p: 'Foreign Exchange',
             h5: 'Make payments, and balance assets across 115+ markets',
-            cta1: 'Contact Us',
+            cta1: 'Learn More',
         },
         {
             Image: Image1,
             p: 'Payments & Settlement',
             h5: 'We provide services through an API solution or a web platform.',
-
             cta1: 'Learn More',
             reverse: true,
             border: true,
+            M: true,
+
         },
     ]
 

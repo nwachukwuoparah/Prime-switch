@@ -25,12 +25,12 @@ const Landing_page = () => {
         cta1: 'Learn More About Us',
     }
 
-    // useEffect(() => {
-    //     window.scrollTo({
-    //         top: 0,
-    //         behavior: 'smooth'
-    //     })
-    // }, [])
+    useEffect(() => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        })
+    }, [])
 
     const scroll = () => {
         window.scrollTo({
@@ -46,6 +46,7 @@ const Landing_page = () => {
                     <span className="landing_page_nx1c_left">
                         <h1>Take Control Of All Your Payment, FX & Treasury Needs</h1>
                         <p>Powering the FX behind Africa’s trillion-dollar growth.</p>
+
                         <div className="landing_page_nx1c_cta">
                             <button onClick={() => navigate('/contact')} className="landing_page_nx1c_cta_button">Contact Us</button>
                             <span onClick={() => scroll()} className="landing_page_nx1c_cta_action">
@@ -103,9 +104,9 @@ const Landing_page = () => {
                     </div>
                 </div>
             </div>
+
             <Component1 {...obj} />
             <Component2 color={true} />
-
             <div className="benefits">
                 <div className="benefits_wrap">
                     <div className="benefits_left">

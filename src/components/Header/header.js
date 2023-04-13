@@ -3,6 +3,7 @@ import './header.css'
 import logo from './Logo 1.png'
 import { BsArrowRight, BsArrowDown } from "react-icons/bs";
 import { NavLink, useNavigate } from "react-router-dom";
+import { HiOutlineMenuAlt4 } from "react-icons/hi";
 const Header = (props) => {
     const [scroll, setScroll] = useState(false)
     const [active, setActive] = useState(false)
@@ -33,6 +34,7 @@ const Header = (props) => {
                     <p>Contact Us</p>
                     {active ? <BsArrowDown /> : < BsArrowRight />}
                 </NavLink>
+                <div className="menu"></div>
             </div>
         </header>
     )

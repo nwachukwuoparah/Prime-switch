@@ -31,6 +31,7 @@
 .component2_top {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     align-items: flex-start;
     justify-content: space-between;
     padding: 0px;
@@ -51,7 +52,6 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 112px;
 }
 
 .component2_bottom span {
@@ -66,4 +66,25 @@
 .component2_bottom span p {
     color: #667085;
     font-size: 14px;
+}
+
+@media screen and (width <=834px) {
+
+    .component2_wrap {
+        width: 90%;
+    }
+
+    .component2_wrap1 {
+        width: 90%;
+    }
+    .component2_top{
+      gap: 20px;
+    }
+
+    .component2_top p {
+        width: 100%;
+        font-size: 20px;
+        line-height: 30px;
+    }
+
 }
