@@ -2,9 +2,11 @@ import React from "react"
 import './component3.css'
 import Image1 from './image/Image 1.png'
 import Image2 from './image/Image 2.png'
+import { useNavigate } from "react-router-dom";
 
 
 const Component3 = (props) => {
+    const navigate = useNavigate()
 
 
 
@@ -14,7 +16,7 @@ const Component3 = (props) => {
                 <div className="component3_left">
                     <p>We Make A Difference</p>
                     <span>The First Choice For Major Enterprises Worldwide.</span>
-                    <button>Contact Us</button>
+                    <button onClick={() => navigate('/contact')}>Contact Us</button>
                 </div>
                 <div className="component3_right">
                     <div className="component3_right_image1"><img className="component3_right_Image" src={Image1} /></div>

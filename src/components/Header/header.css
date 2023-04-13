@@ -49,9 +49,42 @@
     gap: 40px;
 }
 
-.header_nav p {
+.header_nav_N {
     cursor: pointer;
+    text-decoration: none;
+    color: inherit;
+    height: 20px;
 }
+
+.header_nav_N1{
+    cursor: pointer;
+    text-decoration: none;
+    color: inherit;
+    height: 20px;
+}
+
+
+.header_nav_N p {
+    height: 20px;
+}
+
+.header_nav_N1 p {
+    height: 20px;
+}
+
+
+.header_nav_N1::after {
+    content: '';
+    display: block;
+    background: #363F72;
+    width: 20px;
+    height: 2.5px;
+    cursor: pointer;
+    text-decoration: none;
+    color: inherit;
+}
+
+
 
 .header_contact {
     display: flex;

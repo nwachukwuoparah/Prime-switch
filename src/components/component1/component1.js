@@ -1,11 +1,10 @@
 import React from "react"
 import './component1.css'
-
+import { useNavigate } from "react-router-dom";
 import { BsArrowRight } from "react-icons/bs";
-const component1 = (props) => {
+const Component1 = (props) => {
 
-
-
+    const navigate = useNavigate()
 
 
     return (
@@ -19,7 +18,7 @@ const component1 = (props) => {
                     <h2>{props.h2}</h2>
                     <p>{props.p}</p>
                     {props.h5 && <h5>{props.h5}</h5>}
-                    {props.cta1 && <div className="component1_cont_cta">
+                    {props.cta1 && <div onClick={() => navigate('/about')} className="component1_cont_cta">
                         {props.cta1}
                         <BsArrowRight />
                     </div>}
@@ -32,4 +31,4 @@ const component1 = (props) => {
     )
 };
 
-export default component1;
+export default Component1;
