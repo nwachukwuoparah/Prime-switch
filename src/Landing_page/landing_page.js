@@ -1,15 +1,29 @@
+import React, { useState, useEffect } from "react"
 import "./landing_page.css"
 import { BsArrowDown } from "react-icons/bs";
 import { BsArrowRight } from "react-icons/bs";
 import Component1 from "../components/component1/component1";
 import Component2 from "../components/component2/component2";
 import Component3 from "../components/component3/component3";
+import Africa from './images/Image (A).png'
 
-const landing_page = () => {
+const Landing_page = () => {
 
 
+    const obj = {
+        h4: 'Across Africa and Beyond',
+        Image: Africa,
+        h2: 'Supporting businesses in 115+ countries, Primeswitch makes it easier to do business in Africa',
+        p: 'Primeswitch empowers companies from 115+ countries to accelerate their operations in frontier markets through better foreign exchange, treasury services, payments, and last-mile settlement.',
+        cta1: 'Learn More About Us',
+    }
 
-
+    useEffect(() => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        })
+    }, [])
 
     return (
         <div className="landing_page">
@@ -75,8 +89,8 @@ const landing_page = () => {
                     </div>
                 </div>
             </div>
-            <Component1 />
-            <Component2 />
+            <Component1 {...obj} />
+            <Component2 color={true} />
 
             <div className="benefits">
                 <div className="benefits_wrap">
@@ -126,4 +140,4 @@ const landing_page = () => {
     )
 }
 
-export default landing_page
+export default Landing_page

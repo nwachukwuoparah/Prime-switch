@@ -2,9 +2,10 @@ import React, { useState, useEffect } from "react"
 import './header.css'
 import logo from './Logo 1.png'
 import { BsArrowRight } from "react-icons/bs";
+import { NavLink, useNavigate } from "react-router-dom";
 const Header = (props) => {
     const [scroll, setScroll] = useState(false)
-
+    const navigate = useNavigate()
 
     useEffect(() => {
         function handleScroll() {
@@ -21,16 +22,16 @@ const Header = (props) => {
     return (
         <header className={scroll ? "headerS" : "header"}>
             <div className="header_wrap">
-                <img src={logo} className="header_image" />
+                <img onClick={() => navigate('/')} src={logo} className="header_image" />
                 <nav className="header_nav">
-                    <p>About</p>
-                    <p>Our Services</p>
-                    <p>Treasura</p>
+                    <NavLink style={{ textDecoration: 'none', color: 'inherit' }} to={'/about'}><p>About</p></NavLink>
+                    <NavLink style={{ textDecoration: 'none', color: 'inherit' }} to={'/service'} ><p>Our Services</p></NavLink>
+                    <NavLink style={{ textDecoration: 'none', color: 'inherit' }} to={'/tresure'}><p>Treasura</p></NavLink>
                 </nav>
-                <span className="header_contact" >
+                <NavLink to={'/contact'} className="header_contact" >
                     <p>Contact Us</p>
                     <BsArrowRight />
-                </span>
+                </NavLink>
             </div>
         </header>
     )
