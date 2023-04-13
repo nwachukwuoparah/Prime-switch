@@ -25,12 +25,19 @@ const Landing_page = () => {
         cta1: 'Learn More About Us',
     }
 
-    useEffect(() => {
+    // useEffect(() => {
+    //     window.scrollTo({
+    //         top: 0,
+    //         behavior: 'smooth'
+    //     })
+    // }, [])
+
+    const scroll = () => {
         window.scrollTo({
-            top: 0,
+            top: 560,
             behavior: 'smooth'
         })
-    }, [])
+    }
 
     return (
         <div className="landing_page">
@@ -41,7 +48,7 @@ const Landing_page = () => {
                         <p>Powering the FX behind Africa’s trillion-dollar growth.</p>
                         <div className="landing_page_nx1c_cta">
                             <button onClick={() => navigate('/contact')} className="landing_page_nx1c_cta_button">Contact Us</button>
-                            <span className="landing_page_nx1c_cta_action">
+                            <span onClick={() => scroll()} className="landing_page_nx1c_cta_action">
                                 <p>View Details</p>
                                 <BsArrowDown />
                             </span>
@@ -113,14 +120,14 @@ const Landing_page = () => {
                     <div className="benefits_right">
                         <div className="benefits_right_card">
                             <span>
-                                <img src={Image4}/>
+                                <img src={Image4} />
                             </span>
                             <h4>Fast Settlement Times</h4>
                             <p>Rapid settlement within 48 hours.</p>
                         </div>
                         <div className="benefits_right_card">
                             <span>
-                            <img src={Image5}/>
+                                <img src={Image5} />
 
                             </span>
                             <h4>Custom, Competitive Rates</h4>
@@ -128,7 +135,7 @@ const Landing_page = () => {
                         </div>
                         <div className="benefits_right_card">
                             <span>
-                            <img src={Image6}/>
+                                <img src={Image6} />
 
                             </span>
                             <h4>Wholesale Provider</h4>
@@ -136,7 +143,7 @@ const Landing_page = () => {
                         </div>
                         <div className="benefits_right_card">
                             <span>
-                            <img src={Image7}/>
+                                <img src={Image7} />
                             </span>
                             <h4>VIP Customer Support</h4>
                             <p>24/7 customer service reachable via WhatsApp, email, and phone</p>
