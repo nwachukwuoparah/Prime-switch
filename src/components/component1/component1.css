@@ -143,6 +143,17 @@
 
 
 @media screen and (width <=834px) {
+    .component1 {
+        padding-top: 50px;
+    }
+
+    .component1 h4 {
+        position: relative;
+        top: 100px;
+        width: 90%;
+    }
+    
+
     .component1_cont {
         display: flex;
         width: 90%;
