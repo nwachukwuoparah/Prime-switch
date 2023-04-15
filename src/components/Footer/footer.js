@@ -101,8 +101,8 @@ const footer = (props) => {
 
                     <div className="footer_wrap_top_right_mobile">
                         <p>info@primeswitch.com</p>
-                        <span className="footer_wrap_top_socials_mobile"><p>Facebook</p> <p>Twitter</p></span>
-                        <span><SlLocationPin /><p>Canada</p></span>
+                        <div className="footer_wrap_top_socials_mobile"><p>Facebook</p> <p>Twitter</p></div>
+                        <span><SlLocationPin /><p>Canada</p></span> <div className="footer_wrap_top_socials_mobile_small"><p>Facebook</p> <p>Twitter</p></div>
                     </div>
                 </div>
 
