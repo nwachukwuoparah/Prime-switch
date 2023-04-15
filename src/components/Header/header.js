@@ -2,11 +2,12 @@ import React, { useState, useEffect } from "react"
 import './header.css'
 import logo from './Logo 1.png'
 import { BsArrowRight, BsArrowDown } from "react-icons/bs";
+import { MdClear } from "react-icons/md";
 import { NavLink, useNavigate } from "react-router-dom";
-import { HiOutlineMenuAlt4 } from "react-icons/hi";
 const Header = (props) => {
     const [scroll, setScroll] = useState(false)
     const [active, setActive] = useState(false)
+    const [drop, setDrop] = useState(false)
     const navigate = useNavigate()
 
     useEffect(() => {
@@ -34,9 +35,19 @@ const Header = (props) => {
                     <p>Contact Us</p>
                     {active ? <BsArrowDown /> : < BsArrowRight />}
                 </NavLink>
-                <div className="menu"></div>
+                {drop ? <MdClear className="menu_close" onClick={() => setDrop(!drop)} /> : <div onClick={() => setDrop(!drop)} className="menu"></div>}
+
             </div>
-        </header>
+            <div className={drop ? "menu_dropdown1" : "menu_dropdown"}>
+                <div className="menu_dropdown_wrap" >
+                    <span onClick={() => { setDrop(false); navigate('/about') }}><p>About</p></span>
+                    <span onClick={() => { setDrop(false); navigate('/service') }} className="menu_dropdown_middle"><p>Our Services</p></span>
+                    <span onClick={() => { setDrop(false); navigate('/tresure') }}><p>Treasura</p></span>
+                    {/* <span onClick={() => { setDrop(false); navigate('/contact') }}><p>Contact Us</p></span> */}
+                </div>
+            </div>
+
+        </header >
     )
 };
 
