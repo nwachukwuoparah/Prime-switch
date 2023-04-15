@@ -130,18 +130,10 @@
         border-radius: 1px;
     }
 
-    .landing_page_nx1c_cta {
-        display: flex;
-        gap: 30px;
-        font-style: normal;
-        font-weight: 500;
-        font-size: 14px;
-        line-height: 22px;
-        margin-top: 20px;
-    }
+
 }
 
-@media screen and (width <= 425px) {
+@media screen and (width <=425px) {
 
     .header {
         height: 15vh;
