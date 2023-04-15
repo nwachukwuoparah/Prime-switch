@@ -105,8 +105,8 @@ const Landing_page = () => {
                 </div>
             </div>
 
-            <Component1 {...obj} />
-            <Component2 color={true} />
+            {/* <Component1 {...obj} /> */}
+            {/* <Component2 color={true} /> */}
             <div className="benefits">
                 <div className="benefits_wrap">
                     <div className="benefits_left">
@@ -116,7 +116,6 @@ const Landing_page = () => {
                             <p>Contact Us</p>
                             <BsArrowRight />
                         </div>
-
                     </div>
                     <div className="benefits_right">
                         <div className="benefits_right_card">
@@ -152,7 +151,7 @@ const Landing_page = () => {
                     </div>
                 </div>
             </div>
-            < Component3 />
+            {/* < Component3 /> */}
         </div>
     )
 }

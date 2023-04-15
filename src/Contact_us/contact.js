@@ -1,4 +1,4 @@
-import React,{useEffect} from "react"
+import React, { useEffect } from "react"
 import './contact.css'
 import Component3 from "../components/component3/component3";
 import Image from './Map 1.png'
@@ -44,13 +44,11 @@ const Contact = (props) => {
             <div className="contact_wrap">
                 <div className="contact_wrap_input">
                     <div className="contact_wrap_cont">
-                        <span className="contact_wrap_cont_top">
-                            <h5>Contact Us</h5>
-                            <p>Is the answer to your question missing? Get in touch with us.</p>
-                        </span>
-
-
                         <div className="contact_wrap_cont_bottom">
+                            <span className="contact_wrap_cont_top">
+                                <h5>Contact Us</h5>
+                                <p>Is the answer to your question missing? Get in touch with us.</p>
+                            </span>
                             <div>
                                 <p>Email</p>
                                 <span>info@primeswitch.com</span>
@@ -66,7 +64,10 @@ const Contact = (props) => {
                             <img src={Image} />
                         </div>
                     </div>
+
+
                     <form className="contact_wrap_cont_right">
+                        <h5>Contact Us</h5>
                         {item.map((i) => (
                             <input className="contact_wrap_cont_input" type={i.type} placeholder={i.placeholder} />
                         ))}

@@ -11,7 +11,6 @@
     top: 0px;
     z-index: 1000;
     transition: 1s;
-
 }
 
 .headerS {
@@ -100,6 +99,135 @@
 }
 
 @media screen and (width <=834px) {
+
+    .header {
+        height: 15vh;
+    }
+
+    .headerS {
+        height: 15vh;
+    }
+
+    .header_wrap {
+        width: 90%;
+    }
+
+    .header_nav {
+        display: none;
+    }
+
+    .header_contact {
+        display: none;
+    }
+
+    .menu {
+        display: flex;
+        width: 40px;
+        height: 13px;
+        border-bottom: 1.5px solid;
+        border-top: 1.5px solid;
+        border-color: #292D32;
+        border-radius: 1px;
+    }
+
+    .landing_page_nx1c_cta {
+        display: flex;
+        gap: 30px;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 22px;
+        margin-top: 20px;
+    }
+}
+
+@media screen and (width <= 425px) {
+
+    .header {
+        height: 15vh;
+    }
+
+    .headerS {
+        height: 15vh;
+    }
+
+    .header_wrap {
+        width: 90%;
+    }
+
+    .header_nav {
+        display: none;
+    }
+
+    .header_contact {
+        display: none;
+    }
+
+    .menu {
+        display: flex;
+        width: 40px;
+        height: 13px;
+        border-bottom: 1.5px solid;
+        border-top: 1.5px solid;
+        border-color: #292D32;
+        border-radius: 1px;
+    }
+
+    .landing_page_nx1c_cta {
+        display: flex;
+        gap: 30px;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 22px;
+        margin-top: 20px;
+    }
+}
+
+@media screen and (width <=375px) {
+
+    .header {
+        height: 15vh;
+    }
+
+    .headerS {
+        height: 15vh;
+    }
+
+    .header_wrap {
+        width: 90%;
+    }
+
+    .header_nav {
+        display: none;
+    }
+
+    .header_contact {
+        display: none;
+    }
+
+    .menu {
+        display: flex;
+        width: 40px;
+        height: 13px;
+        border-bottom: 1.5px solid;
+        border-top: 1.5px solid;
+        border-color: #292D32;
+        border-radius: 1px;
+    }
+
+    .landing_page_nx1c_cta {
+        display: flex;
+        gap: 30px;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 22px;
+        margin-top: 20px;
+    }
+}
+
+@media screen and (width <=320px) {
 
     .header {
         height: 15vh;

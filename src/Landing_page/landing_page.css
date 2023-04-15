@@ -1,6 +1,6 @@
 .landing_page_top {
     width: 100%;
-    height: 90vh;
+    padding: 60px 0px;
     margin-top: 55px;
     display: flex;
     flex-direction: column;
@@ -12,6 +12,7 @@
     width: 80%;
     height: 85%;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
     /* background-color: #f8f8f8; */
@@ -57,9 +58,9 @@
 
 .landing_page_nx1c_cta_button {
     display: flex;
-    flex-direction: column;
     align-items: center;
-    padding: 14px 48px;
+    justify-content: center;
+    align-items: center;
     gap: 10px;
     width: 172px;
     height: 50px;
@@ -86,7 +87,7 @@
 
 .landing_page_nx1c_right {
     width: 500px;
-    height: 100%;
+    height: 600px;
     /* background-color: grey; */
     display: flex;
     flex-wrap: wrap;
@@ -371,7 +372,7 @@
 
     .landing_page_nx1c_right {
         width: 310px;
-        height: 100%;
+        height: 600px;
         /* background-color: grey; */
         display: flex;
         flex-wrap: wrap;
@@ -394,6 +395,8 @@
 
     .benefits_left {
         width: 90%;
+        /* background-color: red; */
+        height: 230px;
     }
 
     .benefits_right {
@@ -403,5 +406,300 @@
 
     .benefits_right_card {
         width: 48.9%;
+    }
+}
+
+@media screen and (width <=425px) {
+    .landing_page_wrap {
+        width: 90%;
+        gap: 50px;
+        /* background-color: red; */
+    }
+
+    .landing_page_nx1c_left h1 {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 48px;
+        letter-spacing: 1px;
+        color: #101828;
+        width: 400px;
+        z-index: 100;
+    }
+
+    .landing_page_nx1c_left p {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 26px;
+        color: #344054;
+        z-index: 100;
+    }
+
+    .landing_page_nx1c_cta_action {
+        display: none
+    }
+
+    .landing_page_nx1c_cta_button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 12px 40px;
+        gap: 10px;
+        width: 160px;
+        height: 46px;
+        border-color: transparent;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 22px;
+        color: #FFFFFF;
+        cursor: pointer;
+    }
+
+    .landing_page_nx1c_right {
+        width: 100%;
+        height: 600px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .what_we_do h2 {
+        font-size: 24px;
+    }
+
+    .what_we_do_wrap {
+        width: 90%;
+        justify-content: center;
+        gap: 70px;
+    }
+
+
+
+    .benefits_wrap {
+        width: 90%;
+        /* background-color: red; */
+        padding: 40px 0px;
+    }
+
+    .benefits_left {
+        width: 90%;
+        height: 230px;
+    }
+
+    .benefits_right {
+        width: 100%;
+    }
+
+    .benefits_left span {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 29px;
+        color: #101828;
+        width: 320px;
+        /* background-color: red; */
+    }
+
+    .benefits_right_card {
+        width: 100%;
+    }
+}
+
+@media screen and (width <=375px) {
+    .landing_page_wrap {
+        width: 90%;
+        gap: 50px;
+        /* background-color: red; */
+    }
+
+    .landing_page_nx1c_left h1 {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 25px;
+        line-height: 40px;
+        letter-spacing: 1px;
+        color: #101828;
+        width:100%;
+        z-index: 100;
+    }
+
+    .landing_page_nx1c_left p {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 26px;
+        color: #344054;
+        z-index: 100;
+    }
+
+    .landing_page_nx1c_cta_action {
+        display: none
+    }
+
+    .landing_page_nx1c_cta_button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 12px 40px;
+        gap: 10px;
+        width: 160px;
+        height: 46px;
+        border-color: transparent;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 22px;
+        color: #FFFFFF;
+        cursor: pointer;
+    }
+
+    .landing_page_nx1c_right {
+        width: 100%;
+        height: 600px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .what_we_do h2 {
+        font-size: 24px;
+    }
+
+    .what_we_do_wrap {
+        width: 90%;
+        justify-content: center;
+        gap: 70px;
+    }
+
+
+
+    .benefits_wrap {
+        width: 90%;
+        gap: 30px;
+        /* background-color: red; */
+    }
+
+    .benefits_left {
+        width: 90%;
+        height: 230px;
+    }
+
+    .benefits_right {
+        width: 100%;
+    }
+    .benefits_left span {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 29px;
+        color: #101828;
+        width: 320px;
+        /* background-color: red; */
+    }
+
+    .benefits_right_card {
+        width: 100%;
+    }
+}
+
+
+@media screen and (width <= 320px) {
+    .landing_page_wrap {
+        width: 90%;
+        gap: 50px;
+        /* background-color: red; */
+    }
+
+    .landing_page_nx1c_left h1 {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 40px;
+        letter-spacing: 1px;
+        color: #101828;
+        width:100%;
+        z-index: 100;
+        /* background-color: red; */
+    }
+
+    .landing_page_nx1c_left p {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 26px;
+        color: #344054;
+        z-index: 100;
+    }
+
+    .landing_page_nx1c_cta_action {
+        display: none
+    }
+
+    .landing_page_nx1c_cta_button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 12px 40px;
+        gap: 10px;
+        width: 160px;
+        height: 46px;
+        border-color: transparent;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 22px;
+        color: #FFFFFF;
+        cursor: pointer;
+    }
+
+    .landing_page_nx1c_right {
+        width: 100%;
+        height: 600px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .what_we_do h2 {
+        font-size: 24px;
+    }
+
+    .what_we_do_wrap {
+        width: 90%;
+        justify-content: center;
+        gap: 70px;
+    }
+
+
+
+    .benefits_wrap {
+        width: 90%;
+        gap: 30px;
+        /* background-color: red; */
+    }
+
+    .benefits_left {
+        width: 90%;
+        height: 230px;
+    }
+
+    .benefits_right {
+        width: 100%;
+    }
+
+    .benefits_left span {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 29px;
+        color: #101828;
+        width: 280px;
+        /* background-color: red; */
+    }
+
+    .benefits_right_card {
+        width: 100%;
     }
 }
